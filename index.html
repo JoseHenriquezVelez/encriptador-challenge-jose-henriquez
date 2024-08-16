@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <div class="container">
+        <!--Aqui va el logo de alura-->
+        <img src="aluralogo" alt="" srcset="">
+        <!--Aqui va donde se introduce el texto-->
+        <textarea name="textointro" class = "textointro" id="textointro" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        <!--Aqui va el texto y la imagen al pie del texto que se introduce-->
+        <div class="textopie">
+            <img src="logoadvertencia" alt="" srcset="">
+            <p class="textopie"></p>
+        </div>
+        <!--Aqui van los botones-->
+        <div class="botones">
+            <button class="bencriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <button class="bdesencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+        </div>
+         <!--Aqui van los elemento que se mostraran en el lado derecho-->
+         <div class="ladoencriptado">
+        <!--Aqui va a mostrar el texto enciptado-->  
+            <textarea name="textoencriptado" id="textoencriptado" cols="30" rows="10"></textarea>
+            <img src="" alt="" id="noencontrado">
+            <!--Aqui van los mensajes de lado derecho si no detecta  texto-->
+            <div class="mensajetextointro">
+                <h2 id="mensaje1">Ningún mensaje fué encontrado</h2>
+                <p id="mensaje2">Ingresa el texto que se desees encriptar o desenriptar</p>
+            </div>
+            <div class="copiar">
+                <!--Aqui va boton copiar-->
+            <button class="copiar" type="button" onclick="copiar()" id="copiar">Copiar</button>
+            </div>
+            
+
+         </div>
+
+    </div>
+</body>
+</html>
