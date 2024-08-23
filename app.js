@@ -16,17 +16,11 @@ function encriptar(){
     }
     
     let textointrove = document.getElementById("textointro").value
-    .replace(/a/gi,"q")
-    .replace(/e/gi,"r")
-    .replace(/i/gi,"k")
-    .replace(/o/gi,"g")
-    .replace(/u/gi,"j")
-    .replace(/s/gi,"z")
-    .replace(/r/gi,"x")
-    .replace(/n/gi,"m")
-    .replace(/d/gi,"b")
-    .replace(/l/gi,"n")
-    .replace(/c/gi,"s");
+    .replace(/a/gi,"qa")
+    .replace(/e/gi,"re")
+    .replace(/i/gi,"ki")
+    .replace(/o/gi,"go")
+    .replace(/u/gi,"ju");
 
     if (
         imagenOcultar.style.display === "none" &&
@@ -69,17 +63,11 @@ function copiar(id_element) {
 
 function desencriptar(){
     let textointrove = document.getElementById("textointro").value
-    .replace(/q/gi,"a")
-    .replace(/r/gi,"e")
-    .replace(/k/gi,"i")
-    .replace(/g/gi,"o")
-    .replace(/j/gi,"u")
-    .replace(/z/gi,"s")
-    .replace(/x/gi,"r")
-    .replace(/m/gi,"n")
-    .replace(/b/gi,"d")
-    .replace(/n/gi,"l")
-    .replace(/s/gi,"c");
+    .replace(/qa/gi,"a")
+    .replace(/re/gi,"e")
+    .replace(/ki/gi,"i")
+    .replace(/go/gi,"o")
+    .replace(/ju/gi,"u");
     document.getElementById("textoencriptado").value = textointrove;
     document.getElementById("textointro").value = "";
     }
