@@ -1,12 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Rubik:wght@400;500;700&display=swap");
+
+
 *{
   padding: 0%;
   margin: 0%;
+
 }
 
-body {
-    background-color: lightblue;
+.container{
+  position: relative;
+  width: 100vw;
+  height: 99vh;
+  background-color: #F3F5F6;
+}
+
+.container:hover {
+  cursor: url(./cursorllave.svg), auto;
+}
+.logoalura{
+  position: absolute;
+  width: 7%;
+  height: 7%;
+  left: 2%;
+  top: 2%;
+  fill: #0A3871;
+  color: #0A3871 ;
+}
+.textointro{
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  color: #0A3871;
+  width: 42%;
+  height: 60%;
+  left: 16%;
+  top: 16%;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 150%;
+  background-color: #F3F5F6;
+}
+
+#noencuentra {
+  display: block;
+}
+#mensaje1 {
+  display: block;
+}
+#mensaje2 {
+  display: block;
+}
+
+.textointro:focus,
+.textointro:active,
+.textointro::placeholder {
+  color: #0A3871;
+  border: none;
+  outline:none;
   }
 
-.titulo  {
-    background-color: lightblue;
+.textopie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0%;
+    position: absolute;
+    width: 80%;
+    top: 79%;
+    left: 16%;
+}
+  .textopie1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0,75rem;
+    line-height: 150%;
+    color: #424242;
+    flex: none;
+    opacity: 0,9;
+    flex-grow: 0;
+}
+
+.cautionlogo {
+  width: 2%;
+  margin-right: 1%;
+
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1% 0;
+  position: absolute;
+  width: 80%;
+  left: 16%;
+  top: 81%;
+  gap: 0% 2%;
+
+  
+}
+.bencriptar{
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2%;
+  width: 30%;
+  height: 16%;
+  background-color: #0A3871;
+  border: 1px solid black;
+  border-radius: 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 1,125rem;
+  line-height: 19px;
+  text-align: center;
+  color: white;
+}
+.bencriptar:hover{
+  transform:scale(1,1.05);
+  cursor: url(./cursolock.svg), auto;
+  
+}
+.bdesencriptar:hover{
+  transform:scale(1,1.05);
+  cursor: url(./cursounlock.svg), auto;
+}
+.bdesencriptar{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2%;
+  width: 30%;
+  height: 16%;
+  background-color: #D8DFE8;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 1,125rem;
+  line-height: 19px;
+  text-align: center;
+  color: #0A3871;
+}
+
+.ladoencriptado{
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 25%;
+  height: 92%;
+  left: 69%;
+  top: 2%;
+  padding: none;
+  background: white;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0,08);
+  border-radius: 24px;
+}
+
+.mensajetextointro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  gap: 16%;
+  position: absolute;
+  width: 90%;
+  top:56%;
+  text-align: center;
+}
+.mensajetextointro h2 {
+  width: 60%;
+  font-family: "Inter", sans-serif;
+  font-style: bold ;
+  font-weight: 700;
+  font-size: 1,5rem;
+  line-height: 120%;
+  text-align: center;
+  color: #0A3871;
+}
+.mensajetextointro p {
+  width: 90%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  text-align: center;
+  color: #424242 ;
+}
+.ladoencriptado img {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 5%;
+  visibility: visible;
+  
+}
+
+.copiar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  gap: 16%;
+  position: absolute;
+  width: 80%;
+  top:87%;
+  text-align: center;
+}
+
+#bcopiar{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8%;
+  width: 100%;
+  height: 2%;
+  background-color: white;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 1,125rem;
+  line-height: 19px;
+  text-align: center;
+  color: #0A3871;
+  display: none;
+}
+.bcopiar:hover{
+  transform:scale(1,1.05);
+  cursor: url(./cursorcopiar.svg), auto;
+}
+
+#textoencriptado {
+  top:5%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  margin: 2%;
+  gap: 2%;
+  position: absolute;
+  height: 80%;
+  top:5%;
+  border: none;
+  text-align: center;
+  display: none;
+  width: 93%;
+  font-family: "Inter", sans-serif;
+  font-style: normal ;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 150%;
+  text-align: left;
+  color: #0A3871;
+}
+
+.textoencriptado::selection {
+  background-color: #0A3871;
+  color: #484849; 
+  border-color: none;
+
+}
+
+
+.footer {
+  background-color: #0A3871;
+  padding: 1%;
+  position: relative;
+  display: flex;
+  padding-left: 30%;
+  align-items: center;
+  height: 1vh;
+
+}
+
+footer p{
+  font-family: "Rubik", sans-serif;
+  font-style: normal ;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+ 
+}
+
+/* pantala tablet */
+
+@media (max-width: 48em) {
+  .container {
+    height: 99vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .textointro {
+    width: 80%;
+    height: 60%;
+    left:10%;
+    top:5;
+  }
+  .textopie {
+  width: 80%;
+  left: 10%;
+  top:67%  
+  }
+  .textopie1 {
+    font-size: 1rem;
+  }
+  .cautionlogo {
+    width: 5%;
+  }
+  .botones {
+    width: 80%;
+    height: 30%;
+    left: 10%;
+    top: 70%;
+    text-align: center;
+  }
+  .bdesencriptar {
+    width: 332px;
+    height: 67px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10% 10% / 40% 40%;
+  }
+  .bencriptar {
+    width: 332px;
+    height: 67px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10% 10% / 40% 40%;
+  }
+  .bdesencriptar:hover, .bencriptar:hover {
+    transform:scale(1,1.05);
+  }
+  .ladoencriptado {
+    width: 80%;
+    height: 50%;
+    left: 10%;
+    top: 80% 
+  }
+  .ladoencriptado img {
+    top:0;
+    display: none;
+    visibility: hidden;
+  }
+  .mensajetextointro {
+    width: 80%;
+    left: 10%;
+    top: 5% 
+  }
+  .copiar {
+    width: 80%;
+    left: 10%;
+    top: 80% 
+  }
+  .bcopiar{
+    width: 624px;
+    height: 67px;
+    padding: 5%;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10% 10% / 40% 40%;
+  }
+  .bcopiar:hover:hover {
+    transform:scale(1,1.05);
+    cursor: url(./cursorcopiar.svg), auto;
+}
+.textoencriptado {
+  top:15%;
+  display: flex;
+  visibility: visible;
+}
+.footer {
+  visibility: hidden;
+}
+}
+
+/* pantala telefono */
+
+@media (max-width: 23.44em) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .textointro {
+    width: 80%;
+    height: 60%;
+    left:10%;
+    top:5;
+  }
+  .textopie {
+  width: 20%;
+  left: 12%;
+  top:65%  
+  }
+  .cautionlogo {
+    width: 15%;
+  }
+  .textopie p {
+    font-size: 12px;
+  }
+  .botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    width: 90%;
+    height: 30%;
+    left: 1%;
+    top: 70%;
+  }
+  .bdesencriptar {
+    width: 343px;
+    height: 67px;
+    border-radius: 10% 10% / 50% 50%;
+  }
+  .bencriptar {
+    width: 343px;
+    height: 67px;
+    border-radius: 10% 10% / 50% 50%;
+  }
+  .bdesencriptar:hover, .bencriptar:hover {
+    transform:scale(1,1.05);
+  }
+  .ladoencriptado {
+    width: 90%;
+    height: 50%;
+    left: 5%;
+    top: 98% 
+  }
+  .ladoencriptado img {
+    top:0;
+    display: none;
+    visibility: hidden;
+  }
+  .mensajetextointro {
+    width: 80%;
+    left: 5%;
+    top: 5% 
+  }
+  .copiar {
+    width: 80%;
+    height: 50%;
+    left: 5%;
+    top: 90% 
+  }
+  .bcopiar{
+    width: 279px;
+    height: 67px;
+    padding: 5%;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10% 10% / 40% 40%;
+  }
+  .bcopiar:hover:hover {
+    transform:scale(1,1.05);
+}
+  .textoencriptado {
+    top:10%;
+    visibility: visible;
+  }
+  .footer {
+    visibility: hidden;
+  }
 }

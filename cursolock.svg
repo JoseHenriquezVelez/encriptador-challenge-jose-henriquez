@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Capa1">
+        <path d="M16.385,19.683L16.385,9.471C16.385,9.471 23.125,-1.559 30.989,9.879L30.989,19.173" style="fill:none;stroke:rgb(102,121,143);stroke-width:2.49px;"/>
+    </g>
+    <g transform="matrix(1.02594,0,0,1.05736,-1.8545,-2.43032)">
+        <g id="Capa2">
+            <ellipse cx="24.874" cy="30.407" rx="13.857" ry="13.105" style="fill:rgb(139,183,240);stroke:rgb(85,129,186);stroke-width:0.3px;"/>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-2.59355,-2.04974)">
+        <g id="Capa3">
+            <circle cx="26.213" cy="31.871" r="8.723" style="fill:rgb(219,242,255);"/>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,0,0.0418315)">
+        <g id="Capa4">
+            <rect x="22.468" y="29.465" width="2.05" height="5.313" style="fill:rgb(54,64,77);"/>
+        </g>
+    </g>
+</svg>

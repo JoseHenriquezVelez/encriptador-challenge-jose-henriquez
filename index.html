@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="es-co">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
@@ -9,37 +11,40 @@
 <body>
     <div class="container">
         <!--Aqui va el logo de alura-->
-        <img src="aluralogo" alt="" srcset="">
+        <img src="logo-alura.svg" class="logoalura" alt="" srcset="">
         <!--Aqui va donde se introduce el texto-->
-        <textarea name="textointro" class = "textointro" id="textointro" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        <textarea name="textointro" class="textointro" id="textointro" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
         <!--Aqui va el texto y la imagen al pie del texto que se introduce-->
         <div class="textopie">
-            <img src="logoadvertencia" alt="" srcset="">
-            <p class="textopie"></p>
+            <img src="cautionlogo.png" class="cautionlogo" srcset="">
+            <p class="textopie1">Ingresa sólo texto en minúscula y sin acentos.</p>
         </div>
         <!--Aqui van los botones-->
         <div class="botones">
-            <button class="bencriptar" type="button" onclick="encriptar()">Encriptar</button>
-            <button class="bdesencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            <button class="bencriptar" type="button" value="encriptar" onclick="encriptar()">Encriptar</button>
+            <button class="bdesencriptar" type="button" value="desencriptar" onclick="desencriptar()">Desencriptar</button>
         </div>
          <!--Aqui van los elemento que se mostraran en el lado derecho-->
          <div class="ladoencriptado">
         <!--Aqui va a mostrar el texto enciptado-->  
-            <textarea name="textoencriptado" id="textoencriptado" cols="30" rows="10"></textarea>
-            <img src="" alt="" id="noencontrado">
+        <textarea name="textoencriptado" id="textoencriptado" class="textoencriptado" cols="30" rows="20"></textarea>
+            <img src="noencuentra.svg" id="noencuentra">
             <!--Aqui van los mensajes de lado derecho si no detecta  texto-->
             <div class="mensajetextointro">
                 <h2 id="mensaje1">Ningún mensaje fué encontrado</h2>
-                <p id="mensaje2">Ingresa el texto que se desees encriptar o desenriptar</p>
+                <p id="mensaje2">Ingresa el texto que se desees encriptar o desenriptar</p>  
             </div>
-            <div class="copiar">
-                <!--Aqui va boton copiar-->
-            <button class="copiar" type="button" onclick="copiar()" id="copiar">Copiar</button>
+
+           <div class="copiar">
+                
+            <button class="bcopiar" type="button" onclick="copiar('textoencriptado')" id="bcopiar">Copiar</button>
             </div>
             
-
          </div>
 
     </div>
 </body>
+<footer class="footer">
+    <p>Power by Jose Henríquez | ALURA-ONE G7 (2024 )</p>
+</footer>
 </html>
