@@ -4,13 +4,23 @@ function encriptar(){
     let textoOcultar2 = document.getElementById('mensaje2');
     let textAreaMostrar = document.getElementById('textoencriptado');
     let bCopiar = document.getElementById('bcopiar');
+    var regex = /^[a-z]+$/;
 
     if (document.getElementById("textointro").value == "") {
         Swal.fire({
             icon: "error",
             title: "Oops...",
             text: "Debes digitar algo de texto para continuar!",
-            footer: 'No olvide solo minúsculas y sin acentos.'
+            footer: 'No olvides utilizar minúsculas y sin acentos.'
+          });;
+        return;
+    }
+    if (!regex.test(document.getElementById("textointro").value)) {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Debes digitar solo minusculas!",
+            footer: 'No olvides utilizar minúsculas y sin acentos.'
           });;
         return;
     }
