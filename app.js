@@ -19,7 +19,7 @@ function encriptar(){
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Debes digitar solo minusculas!",
+            text: "Debes digitar solo minusculas y sin acentos!",
             footer: 'No olvides utilizar minúsculas y sin acentos.'
           });;
         return;
